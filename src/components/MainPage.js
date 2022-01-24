@@ -28,8 +28,14 @@ const MainPage = () => {
         <div>
             <Header/>
             {
+                /**
+                 * Will go throughout each JSON in exchanges and
+                 * create a component with pagination out of it
+                 */
                 exchanges.map((value, key) => (
-                    <Exchanges theExchange={value} key={key} />
+                    <ul className='exchange-list'>
+                        <Exchanges theExchange={value} key={key} />
+                    </ul>
                 ))
             }
         </div>

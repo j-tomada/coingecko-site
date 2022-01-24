@@ -1,0 +1,20 @@
+.exchange-container {
+    height: 200px;
+    width: 500px;
+}
+
+.exchange-container .exchange-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: -30px;
+}
+
+.exchange-header .exchange-img {
+    width: 75px;
+}
+
+.exchange-header .exchange-title {
+    font-size: 20px;
+    border-bottom: 100%px black;
+}
