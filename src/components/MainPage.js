@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Header from './Header'
+import Header from './Header';
+import Exchanges from './Exchanges';
 
 const MainPage = () => {
     const [exchanges, setExchanges] = useState([]) //Exchanges stored here
@@ -16,9 +17,9 @@ const MainPage = () => {
         .then(response => response.json())
         .then(data => {
             //exchanges = data from the API
-            setExchanges(data)
-            console.log("API successfully fetched")
-        })
+            setExchanges(data);
+            console.log("API successfully fetched");
+        });
     }, []);
     //Successful if this logs 10 items
     console.log(exchanges)
@@ -26,6 +27,11 @@ const MainPage = () => {
     return (
         <div>
             <Header/>
+            {
+                exchanges.map((value, key) => (
+                    <Exchanges theExchange={value} key={key} />
+                ))
+            }
         </div>
     );
 }
