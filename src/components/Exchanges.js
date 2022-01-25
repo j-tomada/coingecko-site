@@ -8,7 +8,7 @@ import MainPage from './MainPage';
 
 const Exchanges = ( {theExchange} ) => {
     return (
-        <button className='exchange-container'>
+        <Link to={theExchange.name} className='exchange-container'>
             <header className='exchange-header'>
                 <img src={theExchange.image} width='75px' />
                 <h1 className='exchange-title'>{theExchange.name}</h1>
@@ -24,7 +24,7 @@ const Exchanges = ( {theExchange} ) => {
                 </div>
             </ul>
             <img className='arrow' src={Arrow} />
-        </button>
+        </Link>
     );
 }
 
