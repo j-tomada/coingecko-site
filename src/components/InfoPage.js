@@ -1,15 +1,17 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import MainPage from './MainPage';
+import { Link } from 'react-router-dom';
 import './InfoPage.css';
 
+/**
+ * This component is displayed when an exchange is clicked.
+ * When an exchange is clicked, the exchange data is sent to
+ * this component as a parameter
+ */
 const InfoPage = ({ thisExchange }) => {
 
     /**
      * Function will check to see if the year_established is present
      * if it isn't, then it will simply return N/A
-     * @param {*} year 
-     * @returns 
      */
     const yearExists = (year) => {
         if (year === null) {
@@ -20,6 +22,10 @@ const InfoPage = ({ thisExchange }) => {
         }
     }
 
+    /**
+     * Function will check to see if a description is given by the exchanges
+     * If it isn't, then it will return a generic no descripton statement
+     */
     const descExists = (desc) => {
         if (desc === "") {
             return "No description has been given by the establishment.";

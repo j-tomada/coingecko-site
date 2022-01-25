@@ -26,6 +26,9 @@ const App = () => {
   //Successful if this logs 10 items
   console.log(exchanges)
 
+  /**
+   * A Function which returns jsx of routes
+   */
   const CreateRoutes = () => (
     <Routes>
       <Route path='/' element={<MainPage listExchange={exchanges} />} />
