@@ -44,3 +44,7 @@ a:-webkit-any-link {
     left: 45%;
     width: 50px;
 }
+
+.link {
+    text-decoration: underline rebeccapurple;
+}

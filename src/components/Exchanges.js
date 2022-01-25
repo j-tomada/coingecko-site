@@ -8,7 +8,7 @@ import MainPage from './MainPage';
 
 const Exchanges = ( {theExchange} ) => {
     return (
-        <Link to={theExchange.id} className=''>
+        <Link to={theExchange.id}>
             <div className='exchange-container'>
                 <header className='exchange-header'>
                     <img src={theExchange.image} width='75px' />

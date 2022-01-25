@@ -1,0 +1,13 @@
+.background-container {
+    text-align: center;
+    background-color: beige;
+}
+
+.inner-container {
+    background-color: bisque;
+    font-family: 'Roboto', sans-serif;
+    height: 750px;
+    width: 750px;
+    border: 2px solid black;
+    display: inline-block;
+}
