@@ -1,6 +1,10 @@
 .background-container {
-    text-align: center;
     background-color: beige;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inner-container {
@@ -9,5 +13,5 @@
     height: 750px;
     width: 750px;
     border: 2px solid black;
-    display: inline-block;
+    margin-top: 100px;
 }
