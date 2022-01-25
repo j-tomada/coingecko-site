@@ -5,7 +5,7 @@ import './Exchanges.css'
 
 const Exchanges = ( {theExchange} ) => {
     return (
-        <Link to={theExchange.id}>
+        <Link to={theExchange.id.toLowerCase()}>
             <div className='exchange-container'>
                 <header className='exchange-header'>
                     <img src={theExchange.image} width='75px' />

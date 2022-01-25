@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link, Route, Routes } from 'react-router-dom';
+import MainPage from './MainPage';
 import './InfoPage.css';
 
 const InfoPage = ({ thisExchange }) => {
