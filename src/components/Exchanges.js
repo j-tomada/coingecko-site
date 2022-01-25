@@ -2,7 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Exchanges.css'
 
-
+/**
+ * The data for each exchange is stored into 
+ * this container. 
+ */
 const Exchanges = ( {theExchange} ) => {
     return (
         <Link to={theExchange.id.toLowerCase()}>
