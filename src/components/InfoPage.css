@@ -10,14 +10,35 @@
 .inner-container {
     background-color: bisque;
     font-family: 'Roboto', sans-serif;
-    height: 750px;
+    height: 300px;
     width: 750px;
     border: 2px solid black;
     margin-top: 100px;
 }
 
+.return-container {
+    margin: 10px;
+    margin-top: 15px;
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+}
+
+.return-container:hover {
+    background-color: rgb(247, 205, 155);
+}
+
+
+.upper-container {
+    display: inline-flex;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
 .upper-container .content {
     list-style-type: none;
+    font-size: 15px;
 }
 
 .desc-container {

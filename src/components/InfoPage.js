@@ -37,7 +37,7 @@ const InfoPage = ({ thisExchange }) => {
                     </div>
                 </Link>
                 <div className='upper-container'>
-                    <img src={thisExchange.image} width='100px' />
+                    <img src={thisExchange.image} width='100px'/>
                     <ul className='content'>
                         <li><b>Name: </b>{thisExchange.name}</li>
                         <li><b>Country: </b>{thisExchange.country}</li>
