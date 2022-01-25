@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './MainPage.css'
+import { BrowserRouter as Router} from 'react-router-dom';
 import Header from './Header';
 import Exchanges from './Exchanges';
+import InfoPage from './InfoPage';
+import './MainPage.css';
 
 const MainPage = () => {
     const [exchanges, setExchanges] = useState([]) //Exchanges stored here
@@ -26,6 +28,7 @@ const MainPage = () => {
     console.log(exchanges)
 
     return (
+        <Router>
         <div className='main-container'>
             <Header/>
             <ul className='exchange-list'>
@@ -42,6 +45,7 @@ const MainPage = () => {
             }
             </ul>
         </div>
+        </Router>
     );
 }
 

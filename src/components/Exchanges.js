@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Arrow from '../images/right_arrow.png'
 import './Exchanges.css'
+import InfoPage from './InfoPage';
+import MainPage from './MainPage';
 
 
 const Exchanges = ( {theExchange} ) => {
@@ -17,7 +20,7 @@ const Exchanges = ( {theExchange} ) => {
                 {/*URL Link*/}
                 <div>
                     <b>URL: </b>
-                    <a injected href={theExchange.url}>{theExchange.url}</a>
+                    <a href={theExchange.url}>{theExchange.url}</a>
                 </div>
             </ul>
             <img className='arrow' src={Arrow} />
