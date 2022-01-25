@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Exchanges from './Exchanges';
-import InfoPage from './InfoPage';
 import './MainPage.css';
 
 const MainPage = ( {listExchange} ) => {

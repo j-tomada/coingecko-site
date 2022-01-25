@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Exchanges.css'
-import InfoPage from './InfoPage';
-import MainPage from './MainPage';
 
 
 const Exchanges = ( {theExchange} ) => {
