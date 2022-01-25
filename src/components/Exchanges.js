@@ -20,7 +20,7 @@ const Exchanges = ( {theExchange} ) => {
                     {/*URL Link*/}
                     <div>
                         <b>URL: </b>
-                        <Link to={theExchange.url}>{theExchange.url}</Link>
+                        <a href={theExchange.url}>{theExchange.url}</a>
                     </div>
                 </ul>
             </div>

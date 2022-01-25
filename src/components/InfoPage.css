@@ -32,12 +32,20 @@
 .upper-container {
     display: inline-flex;
     position: relative;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 10px;
     margin-left: 10px;
+    width: 100%;
+}
+
+.upper-container .img-container {
+    width: 100px;
+    height: 100px;
 }
 
 .upper-container .content {
     list-style-type: none;
+    text-align: left;
     font-size: 15px;
 }
 

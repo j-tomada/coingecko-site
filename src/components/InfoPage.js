@@ -37,12 +37,17 @@ const InfoPage = ({ thisExchange }) => {
                     </div>
                 </Link>
                 <div className='upper-container'>
-                    <img src={thisExchange.image} width='100px'/>
+                    <img src={thisExchange.image} className='img-container'/>
                     <ul className='content'>
                         <li><b>Name: </b>{thisExchange.name}</li>
                         <li><b>Country: </b>{thisExchange.country}</li>
                         <li><b>Trust Rank: </b>{thisExchange.trust_score_rank}</li>
                         <li><b>Year of Establishment: </b>{yearExists(thisExchange.year_established)}</li>
+                        {/*Social Media Link*/}
+                        <li>
+                            <b>URL: </b>
+                            <a href={thisExchange.url}>{thisExchange.url}</a>
+                        </li>
                     </ul>
                 </div>
 
