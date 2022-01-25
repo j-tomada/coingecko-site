@@ -2,6 +2,16 @@ import React from 'react';
 import './InfoPage.css';
 
 const InfoPage = ({ thisExchange }) => {
+
+    const yearExists = (year) => {
+        if (year === null) {
+            return "N/A";
+        }
+        else {
+            return year;
+        }
+    }
+
     return (
         <div className='background-container'>
             <div className='inner-container'>
@@ -11,7 +21,7 @@ const InfoPage = ({ thisExchange }) => {
                         <li><b>Name: </b>{thisExchange.name}</li>
                         <li><b>Country: </b>{thisExchange.country}</li>
                         <li><b>Trust Rank: </b>{thisExchange.trust_score_rank}</li>
-                        <li><b>Year of Establishment: </b>{thisExchange.year_established}</li>
+                        <li><b>Year of Establishment: </b>{yearExists(thisExchange.year_established)}</li>
                     </ul>
 
                 </div>
