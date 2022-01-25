@@ -29,22 +29,22 @@ const MainPage = () => {
 
     return (
         <Router>
-        <div className='main-container'>
-            <Header/>
-            <ul className='exchange-list'>
-            {
-                /**
-                 * Will go throughout each JSON in exchanges and
-                 * create a component with pagination out of it
-                 */
-                exchanges.map((value, key) => (
-                    <li className='exchange-items' key={key}>
-                        <Exchanges theExchange={value}/>
-                    </li>
-                ))
-            }
-            </ul>
-        </div>
+            <div className='main-container'>
+                <Header/>
+                <ul className='exchange-list'>
+                {
+                    /**
+                     * Will go throughout each JSON in exchanges and
+                     * create a component with pagination out of it
+                     */
+                    exchanges.map((value, key) => (
+                        <li className='exchange-items' key={key}>
+                            <Exchanges theExchange={value}/>
+                        </li>
+                    ))
+                }
+                </ul>
+            </div>
         </Router>
     );
 }
