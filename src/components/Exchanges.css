@@ -38,12 +38,6 @@ a:-webkit-any-link {
     margin-left: 10px;
 }
 
-.exchange-container .arrow {
-    position: relative;
-    bottom: 50%;
-    left: 45%;
-    width: 50px;
-}
 
 .link {
     text-decoration: underline rebeccapurple;

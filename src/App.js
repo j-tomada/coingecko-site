@@ -31,7 +31,7 @@ const App = () => {
       <Route path='/' element={<MainPage listExchange={exchanges} />} />
       {
         exchanges.map((value, key) => (
-          <Route path={`/${value.id}`} key={key} element={<InfoPage thisExchange={value}/>} />
+          <Route path={`/${value.id}/`} key={key} element={<InfoPage thisExchange={value}/>} />
         ))
       }
     </Routes>
