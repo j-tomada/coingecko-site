@@ -1,3 +1,14 @@
+.main-container {
+    text-align: center; 
+    background-color: beige;
+}
+
+
 .exchange-list {
-    display: inline !important;
+    list-style: none;
+    display: inline-block;
+}
+
+.exchange-list .exchange-items {
+    margin-bottom: 10px;
 }

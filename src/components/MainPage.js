@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './MainPage.css'
 import Header from './Header';
 import Exchanges from './Exchanges';
 
@@ -25,19 +26,21 @@ const MainPage = () => {
     console.log(exchanges)
 
     return (
-        <div>
+        <div className='main-container'>
             <Header/>
+            <ul className='exchange-list'>
             {
                 /**
                  * Will go throughout each JSON in exchanges and
                  * create a component with pagination out of it
                  */
                 exchanges.map((value, key) => (
-                    <ul className='exchange-list' key={key}>
+                    <li className='exchange-items' key={key}>
                         <Exchanges theExchange={value}/>
-                    </ul>
+                    </li>
                 ))
             }
+            </ul>
         </div>
     );
 }
