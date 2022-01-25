@@ -2,28 +2,39 @@ import React from 'react';
 import './Exchanges.css'
 
 const Exchanges = ( {theExchange} ) => {
+    const url = theExchange.url;
     /**
-     * Function used to bold certain parts of a line
-     * @param {*} props 
+     * Function checks to see if the exchange contains a url
+     * Returns No url if there is none present
+     * @param url from exchanges
      * @returns 
      */
-    const b = (props) => (
-        <div style={{fontweight: 'bold'}}>{props.children}</div>
-    );
+    const hasURL = (url) => {
+        if (hasURL === null) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
 
     return (
-        <button className='exchange-container'>
+        <div className='exchange-container'>
             <header className='exchange-header'>
-                <img className='exchange-img' src={theExchange.image}/>
+                <img src={theExchange.image} width='75px' />
                 <h1 className='exchange-title'>{theExchange.name}</h1>
             </header>
 
-            <ul>
+            <ul className='exchange-content'>
                 <div><b>Country: </b>{theExchange.country}</div>
                 <div><b>Trust Rank: </b>{theExchange.trust_score_rank}</div>
-                <div><b>URL: </b>{theExchange.url}</div>
+                {/*URL Link*/}
+                <div>
+                    <b>URL: </b>
+                    <a className='exchange-link' href={url}>{url}</a>
+                </div>
             </ul>
-        </button>
+        </div>
     );
 }
 

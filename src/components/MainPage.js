@@ -33,8 +33,8 @@ const MainPage = () => {
                  * create a component with pagination out of it
                  */
                 exchanges.map((value, key) => (
-                    <ul className='exchange-list'>
-                        <Exchanges theExchange={value} key={key} />
+                    <ul className='exchange-list' key={key}>
+                        <Exchanges theExchange={value}/>
                     </ul>
                 ))
             }
