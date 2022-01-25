@@ -7,9 +7,16 @@
     text-align: center;
 }
 
+.exchange-container:hover {
+    background-color: rgb(247, 205, 155);
+}
+
 .exchange-container .exchange-content {
     width: 100;
     text-align: left;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 15px;
 }
 
 .exchange-container .exchange-header {
@@ -22,5 +29,11 @@
 .exchange-header .exchange-title {
     font-size: 25px;
     margin-left: 10px;
-    border-bottom: 100%px black; 
+}
+
+.exchange-container .arrow {
+    position: relative;
+    bottom: 50%;
+    left: 45%;
+    width: 50px;
 }

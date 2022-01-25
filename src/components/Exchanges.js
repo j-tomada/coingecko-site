@@ -1,9 +1,11 @@
 import React from 'react';
+import Arrow from '../images/right_arrow.png'
 import './Exchanges.css'
+
 
 const Exchanges = ( {theExchange} ) => {
     return (
-        <div className='exchange-container'>
+        <button className='exchange-container'>
             <header className='exchange-header'>
                 <img src={theExchange.image} width='75px' />
                 <h1 className='exchange-title'>{theExchange.name}</h1>
@@ -15,10 +17,11 @@ const Exchanges = ( {theExchange} ) => {
                 {/*URL Link*/}
                 <div>
                     <b>URL: </b>
-                    <a href={theExchange.url}>{theExchange.url}</a>
+                    <a injected href={theExchange.url}>{theExchange.url}</a>
                 </div>
             </ul>
-        </div>
+            <img className='arrow' src={Arrow} />
+        </button>
     );
 }
 
