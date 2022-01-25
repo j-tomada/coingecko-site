@@ -2,22 +2,6 @@ import React from 'react';
 import './Exchanges.css'
 
 const Exchanges = ( {theExchange} ) => {
-    const url = theExchange.url;
-    /**
-     * Function checks to see if the exchange contains a url
-     * Returns No url if there is none present
-     * @param url from exchanges
-     * @returns 
-     */
-    const hasURL = (url) => {
-        if (hasURL === null) {
-            return false;
-        }
-        else {
-            return true;
-        }
-    }
-
     return (
         <div className='exchange-container'>
             <header className='exchange-header'>
@@ -31,7 +15,7 @@ const Exchanges = ( {theExchange} ) => {
                 {/*URL Link*/}
                 <div>
                     <b>URL: </b>
-                    <a className='exchange-link' href={url}>{url}</a>
+                    <a href={theExchange.url}>{theExchange.url}</a>
                 </div>
             </ul>
         </div>

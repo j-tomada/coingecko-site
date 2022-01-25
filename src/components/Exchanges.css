@@ -3,24 +3,23 @@
     height: 200px;
     width: 500px;
     border: 2px solid black;
+    text-align: center;
 }
 
 .exchange-container .exchange-content {
     width: 100;
+    text-align: left;
 }
 
 .exchange-container .exchange-header {
-    display: flex;
+    display: inline-flex;
     position: relative;
     align-items: center;
+    margin: 10px;
 }
 
 .exchange-header .exchange-title {
     font-size: 25px;
     margin-left: 10px;
     border-bottom: 100%px black; 
-}
-
-.exchange-link {
-    display: inline !important;
 }
