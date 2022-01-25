@@ -15,11 +15,7 @@ const Exchanges = ( {theExchange} ) => {
                 <ul className='exchange-content'>
                     <div><b>Country: </b>{theExchange.country}</div>
                     <div><b>Trust Rank: </b>{theExchange.trust_score_rank}</div>
-                    {/*URL Link*/}
-                    <div>
-                        <b>URL: </b>
-                        <a href={theExchange.url}>{theExchange.url}</a>
-                    </div>
+                    <div><b>URL: </b>{theExchange.url}</div>
                 </ul>
             </div>
         </Link>
