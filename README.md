@@ -1,4 +1,5 @@
-#Coingecko Site
+##Coingecko Site
+
 An application which displays the first 10 exchanges from the Coingecko API.
 
 **Known Issues**
