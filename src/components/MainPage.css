@@ -5,6 +5,10 @@
     height: 100%;
 }
 
+.main-container {
+    margin: auto;
+}
+
 
 .exchange-list {
     list-style: none;
