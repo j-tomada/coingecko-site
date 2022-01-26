@@ -5,8 +5,10 @@
     height: 100%;
 }
 
-.main-container {
-    margin: auto;
+.main-container .exchange-list {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
 }
 
 
